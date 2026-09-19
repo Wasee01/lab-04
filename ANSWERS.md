@@ -1,9 +1,8 @@
-# ANSWERS.md — Structural Tests (Tasks 3 & 5)
+
 
 All five rules live in
 `src/test/java/com/example/bookstore/architecture/LayeredArchitectureTest.java`.
-Each rule was broken once on a scratch branch, the exact failure recorded below,
-then the branch was reverted.
+
 
 The five breakages are on these scratch branches:
 
@@ -17,11 +16,4 @@ The five breakages are on these scratch branches:
 
 ---
 
-## Rule 1 — one-directional layering
 
-**Baseline:** PASS.
-
-**Break (`scratch/arch-rule-1`):** Added a field of type `BookRepository` to
-`BookController`.
-
-**Verbatim failure message:**
