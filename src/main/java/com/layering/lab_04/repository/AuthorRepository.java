@@ -1,0 +1,16 @@
+package com.layering.lab_04.repository;
+
+import com.layering.lab_04.model.Author;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface AuthorRepository {
+    Author save(Author author);
+
+    Optional<Author> findById(Long id);
+
+    List<Author> findAll();
+
+    void deleteById(Long id);
+}
